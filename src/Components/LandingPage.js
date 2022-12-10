@@ -8,7 +8,7 @@ const LandingPage = () => {
       <div
         className="bg-cover"
         style={{
-          height: "100vh",
+          height: "80vh",
         }}
       >
         <div className="pt-48">

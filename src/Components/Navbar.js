@@ -1,81 +1,73 @@
 import React from "react";
+import { FaBars } from "react-icons/fa";
 
-const Navbar = () => {
+export default function Navbar() {
+  const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <div>
-      <nav className="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded shadow-md">
-        <div className="container flex flex-wrap items-center md:justify-around mx-auto">
-          <button
-            data-collapse-toggle="navbar-default"
-            type="button"
-            className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 "
-            aria-controls="navbar-default"
-            aria-expanded="false"
-          >
-            <span className="sr-only">Open main menu</span>
-            <svg
-              className="w-6 h-6"
-              aria-hidden="true"
-              fill="currentColor"
-              viewBox="0 0 20 20"
-              xmlns="http://www.w3.org/2000/svg"
+    <>
+      <nav className=" flex flex-wrap items-center justify-between px-2 py-3 mb-3 shadow-lg bg-white">
+        <div className="container px-4 mx-auto flex flex-wrap items-center justify-between">
+          <div className="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+            <button
+              className=" cursor-pointer text-xl leading-none px-3 py-1 border border-solid rounded block lg:hidden outline-none focus:outline-none"
+              type="button"
+              onClick={() => setNavbarOpen(!navbarOpen)}
             >
-              <path
-                fillRule="evenodd"
-                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                clipRule="evenodd"
-              ></path>
-            </svg>
-          </button>
-          <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-base md:font-medium md:border-0 md:bg-white">
-              <li>
+              <FaBars />
+            </button>
+          </div>
+          <div
+            className={
+              "lg:flex flex-grow items-center" +
+              (navbarOpen ? " flex" : " hidden")
+            }
+            id="example-navbar-danger"
+          >
+            <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              <li className="nav-item">
                 <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/"
-                  className="block py-2 pl-3 pr-4 text-[#040c2c] font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
-                  aria-current="page"
                 >
-                  Home
+                  <span className="ml-2 text-base">About</span>
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/"
-                  className="block py-2 pl-3 pr-4 text-[#040c2c] font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0"
                 >
-                  About
+                  <span className="ml-2 text-base">Experience</span>
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/"
-                  className="block py-2 pl-3 pr-4 text-[#040c2c] font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
-                  Experiences
+                  <span className="ml-2 text-base">Projects</span>
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/"
-                  className="block py-2 pl-3 pr-4 text-[#040c2c] font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
-                  Projects
+                  <span className="ml-2 text-base">Blogs</span>
                 </a>
               </li>
-              <li>
+              <li className="nav-item">
                 <a
+                  className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
                   href="/"
-                  className="block py-2 pl-3 pr-4 text-[#040c2c] font-semibold rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 "
                 >
-                  My Blogs
+                  <span className="ml-2 text-base">Contact Me</span>
                 </a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
-    </div>
+    </>
   );
-};
-
-export default Navbar;
+}
