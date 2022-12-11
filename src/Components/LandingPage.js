@@ -8,10 +8,12 @@ const LandingPage = () => {
       <div
         className="bg-cover"
         style={{
-          height: "80vh",
+          backgroundImage:
+            "url(https://res.cloudinary.com/ash123/image/upload/v1670770082/Screenshot_20221211_201732_hptilq.png)",
+          height: "90vh",
         }}
       >
-        <div className="pt-48">
+        <div className="pt-44">
           <div className="text-2xl lg:text-6xl font-bold text-center text-[#040c2c]">
             I'm Aashirbad Sabat
           </div>

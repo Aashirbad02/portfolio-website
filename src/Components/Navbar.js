@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaBars } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 export default function Navbar() {
-  const [navbarOpen, setNavbarOpen] = React.useState(false);
+  const [navbarOpen, setNavbarOpen] = useState(false);
   return (
     <>
       <nav className=" flex flex-wrap items-center justify-between px-2 py-3 mb-3 shadow-lg bg-white">
@@ -25,44 +26,64 @@ export default function Navbar() {
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
               <li className="nav-item">
-                <a
+                <Link
+                  to="about"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/"
                 >
                   <span className="ml-2 text-base">About</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  to="experiences"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/"
                 >
-                  <span className="ml-2 text-base">Experience</span>
-                </a>
+                  <span className="ml-2 text-base">Experiences</span>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  to="projects"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/"
                 >
                   <span className="ml-2 text-base">Projects</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  to="blogs"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/"
                 >
                   <span className="ml-2 text-base">Blogs</span>
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a
+                <Link
+                  to="contactMe"
+                  spy={true}
+                  smooth={true}
+                  duration={500}
+                  style={{ cursor: "pointer" }}
                   className="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
-                  href="/"
                 >
                   <span className="ml-2 text-base">Contact Me</span>
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
