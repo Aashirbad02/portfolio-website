@@ -1,13 +1,13 @@
 import React from "react";
 import "../css/About.css";
-import Fade from "react-reveal/Fade";
+import { Slide } from "react-awesome-reveal";
 
 const About = () => {
   return (
     <div className="lg:h-[80vh] bg-[#fafafa]" id="about">
-      <div className="flex flex-col-reverse lg:flex-row lg:px-16 p-6">
-        <div className="lg:w-[60%] pt-24">
-          <Fade left>
+      <Slide>
+        <div className="flex flex-col-reverse lg:flex-row lg:px-16 p-6">
+          <div className="lg:w-[60%] pt-24">
             <div className="text-4xl font-bold text-[#040c2c]">About Me</div>
             <div className="pt-3 pb-1 text-[#999]">
               Visual Designer and Full-Stack Developer
@@ -29,17 +29,15 @@ const About = () => {
                 </button>
               </a>
             </div>
-          </Fade>
-        </div>
-        <div className="pt-16">
-          <Fade right>
+          </div>
+          <div className="pt-16">
             <img
               src="https://res.cloudinary.com/ash123/image/upload/v1670515279/photo-removebg_uncjxa.png"
               alt="Aashirbad Sabat"
             />
-          </Fade>
+          </div>
         </div>
-      </div>
+      </Slide>
     </div>
   );
 };

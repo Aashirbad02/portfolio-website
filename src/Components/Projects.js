@@ -1,11 +1,11 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Slide } from "react-awesome-reveal";
 
 const Projects = () => {
   return (
     <div id="projects">
       <div className="bg-[#fafafa] p-16">
-        <Fade left>
+        <Slide left>
           <div className="text-center text-4xl font-bold text-[#040c2c] pb-8 ">
             Projects
           </div>
@@ -20,9 +20,7 @@ const Projects = () => {
                 alt="Sunset in the mountains"
               />
               <div className="px-6 py-4">
-                <div className="font-bold text-xl mb-2" data-wow-duration="4s">
-                  The Coldest Sunset
-                </div>
+                <div className="font-bold text-xl mb-2">The Coldest Sunset</div>
                 <p className="text-gray-700 text-base">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Voluptatibus quia, nulla! Maiores et perferendis eaque,
@@ -67,7 +65,7 @@ const Projects = () => {
               </div>
             </a>
           </div>
-        </Fade>
+        </Slide>
       </div>
     </div>
   );

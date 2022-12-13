@@ -1,12 +1,12 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
+import { Slide } from "react-awesome-reveal";
 
 const Blogs = () => {
   return (
     <div id="blogs">
       <section className="py-6 sm:py-12">
         <div className="container p-6 mx-auto space-y-8">
-          <Fade right>
+          <Slide right>
             <div className="space-y-2 text-center ">
               <h2 className="text-4xl font-bold text-[#040c2c] pb-4">
                 My Blogs
@@ -90,7 +90,7 @@ const Blogs = () => {
                 </div>
               </article>
             </div>
-          </Fade>
+          </Slide>
         </div>
       </section>
     </div>
