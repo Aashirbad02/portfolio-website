@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 const ContactUs = () => {
   return (
     <div id="contactMe">
-      <div className="container my-24 px-6 mx-auto">
+      <div className="container py-24 px-6 mx-auto bg-[#fafafa]">
         <Slide>
           <section className="mb-32 text-gray-800">
             <div className="flex flex-wrap">
@@ -18,9 +18,7 @@ const ContactUs = () => {
                   dolorem nisi corrupti eveniet dolores ad maiores repellendus
                   enim autem omnis fugiat perspiciatis? Ad, veritatis.
                 </p>
-                <p className="text-gray-500 mb-2">
-                  New York, 94126, United States
-                </p>
+                <p className="text-gray-500 mb-2">Bhubaneswar, Odisha</p>
                 <p className="text-gray-500 mb-2">+91 9937775273</p>
                 <p className="text-gray-500 mb-2">sabataashirbad@gmail.com</p>
               </div>
@@ -104,6 +102,7 @@ const ContactUs = () => {
             uppercase
             rounded
             shadow-md
+            border
             border-[#040c2c]
             hover:bg-[#040c2c] hover:shadow-lg hover:text-white
             active:bg-[#040c2c] active:shadow-lg
