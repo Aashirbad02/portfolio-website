@@ -22,7 +22,7 @@ const LandingPage = () => {
             <Typewriter
               options={{
                 strings: [
-                  "Developing Great Websites",
+                  "Developing Websites",
                   "Designing UI/UX",
                   "Participating in Hackathons",
                   "Writing Blogs",
@@ -33,7 +33,7 @@ const LandingPage = () => {
               onInit={(typewriter) => {
                 typewriter
 
-                  .typeString("Developing Great Websites")
+                  .typeString("Developing Websites")
 
                   .pauseFor(800)
                   .deleteAll()
@@ -50,7 +50,7 @@ const LandingPage = () => {
           </div>
 
           <div className="flex mt-4 space-x-6 justify-center sm:mt-0">
-            <a href="/" className="text-gray-900 ">
+            {/* <a href="/" className="text-gray-900 ">
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
@@ -64,8 +64,8 @@ const LandingPage = () => {
                 />
               </svg>
               <span className="sr-only">Facebook page</span>
-            </a>
-            <a href="/" className="text-gray-900 ">
+            </a> */}
+            {/* <a href="/" className="text-gray-900 ">
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
@@ -79,8 +79,13 @@ const LandingPage = () => {
                 />
               </svg>
               <span className="sr-only">Instagram page</span>
-            </a>
-            <a href="/" className="text-gray-900 ">
+            </a> */}
+            <a
+              href="https://twitter.com/Aashirbad_Sabat"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-900 "
+            >
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
@@ -91,7 +96,12 @@ const LandingPage = () => {
               </svg>
               <span className="sr-only">Twitter page</span>
             </a>
-            <a href="/" className="text-gray-900">
+            <a
+              href="https://github.com/Aashirbad02"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-900"
+            >
               <svg
                 className="w-8 h-8"
                 fill="currentColor"
@@ -106,7 +116,12 @@ const LandingPage = () => {
               </svg>
               <span className="sr-only">GitHub account</span>
             </a>
-            <a href="/" className="text-gray-900">
+            <a
+              href="https://www.linkedin.com/in/aashirbad-sabat-443974228/"
+              target="_blank"
+              rel="noreferrer"
+              className="text-gray-900"
+            >
               <img
                 className="w-8 h-8"
                 src="https://res.cloudinary.com/ash123/image/upload/v1670495287/linkedin_hf3mjh.svg"

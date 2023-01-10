@@ -4,7 +4,7 @@ import { Slide } from "react-awesome-reveal";
 const Experiences = () => {
   return (
     <div id="experiences">
-      <Slide right>
+      <Slide right triggerOnce>
         <div className="text-4xl text-center font-bold text-[#040c2c] pt-16">
           Experiences
         </div>

@@ -5,7 +5,7 @@ import { Slide } from "react-awesome-reveal";
 const About = () => {
   return (
     <div className="lg:h-[80vh] bg-[#fafafa]" id="about">
-      <Slide>
+      <Slide triggerOnce>
         <div className="flex flex-col-reverse lg:flex-row lg:px-16 p-6">
           <div className="lg:w-[60%] pt-24">
             <div className="text-4xl font-bold text-[#040c2c]">About Me</div>

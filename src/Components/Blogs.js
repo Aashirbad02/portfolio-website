@@ -6,7 +6,7 @@ const Blogs = () => {
     <div id="blogs">
       <section className="py-6 sm:py-12">
         <div className="container p-6 mx-auto space-y-8">
-          <Slide right>
+          <Slide right triggerOnce>
             <div className="space-y-2 text-center ">
               <h2 className="text-4xl font-bold text-[#040c2c] pb-4">
                 My Blogs
@@ -22,7 +22,7 @@ const Blogs = () => {
                   <img
                     alt=""
                     className="object-cover w-full h-52 rounded-lg"
-                    src="https://resources.owllabs.com/hubfs/best%20computer%20monitors.jpeg"
+                    src="https://static.wixstatic.com/media/c61fe93195d24820abb5c5c273820393.jpg/v1/fill/w_925,h_616,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/c61fe93195d24820abb5c5c273820393.jpg"
                   />
                 </a>
                 <div className="flex flex-col flex-1 p-6">
@@ -30,14 +30,13 @@ const Blogs = () => {
                     href="/"
                     className="text-xs tracking-wider uppercase hover:underline "
                   >
-                    Convenire
+                    Beginner's Coding Journey
                   </a>
                   <h3 className="flex-1 py-2 text-lg font-semibold leading-snug">
-                    Te nulla oportere reprimique his dolorum
+                    Read this blog to start your amazing coding journey!
                   </h3>
                   <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs ">
-                    <span>June 1, 2020</span>
-                    <span>2.1K views</span>
+                    <span>Apr 14, 2022</span>
                   </div>
                 </div>
               </article>
@@ -61,7 +60,6 @@ const Blogs = () => {
                   </h3>
                   <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs ">
                     <span>June 2, 2020</span>
-                    <span>2.2K views</span>
                   </div>
                 </div>
               </article>
@@ -85,7 +83,6 @@ const Blogs = () => {
                   </h3>
                   <div className="flex flex-wrap justify-between pt-3 space-x-2 text-xs ">
                     <span>June 3, 2020</span>
-                    <span>2.3K views</span>
                   </div>
                 </div>
               </article>
